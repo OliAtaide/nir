@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+    --primary-dark: #204e34;
+    --primary: #dbf6ed;
+    --primary-light: #f8fffd;
+}
+
+.subheader {
+    background-color: var(--primary);
+}
+
+* {
+    color: var(--primary-dark);
+}
+
+header {
+    font-family: "Titillium Web", sans-serif;
+}
+
+main {
+    font-family: "Jost", sans-serif;
+}

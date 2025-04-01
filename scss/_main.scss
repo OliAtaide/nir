@@ -3,25 +3,36 @@
         border-radius: 20px;
         border: 1px solid var(--primary-dark);
         margin-bottom: 24px;
+        background-color: var(--primary);
+
+        &:has(.show) {
+            height: calc(100% - 24px);
+        }
     }
 
-    .accordion-header{
+    .accordion-header {
         border-radius: 20px;
+        background-color: white;
     }
 
     .accordion-button {
         border-top-left-radius: 20px !important;
         border-top-right-radius: 20px !important;
         border-bottom: 1px solid var(--primary-dark);
+        background-color: transparent !important;
 
-        &.collapsed{
+        &.collapsed {
             border-radius: 20px !important;
         }
     }
 
+    .accordion-body {
+        font-size: 14px;
+    }
+
     .number {
-        width: 62px;
-        height: 62px;
+        min-width: 62px;
+        min-height: 62px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -39,8 +50,7 @@
         font-weight: 500;
     }
 
-    .collapse{
-        background-color: var(--primary);
+    .collapse {
         border-bottom-left-radius: 20px !important;
         border-bottom-right-radius: 20px !important;
     }
